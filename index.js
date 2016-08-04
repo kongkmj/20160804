@@ -1194,7 +1194,7 @@ server.listen(11111,function () {
 //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ DB 관련 start @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 //##################### DB 연결 ########################
-mongoose.connect("mongodb://test:test@ds023664.mlab.com:23664/roadtest");
+mongoose.connect("mongodb://127.0.0.1:27017");
 var db = mongoose.connection;
 db.once("open",function () {
   console.log("DB connected");
